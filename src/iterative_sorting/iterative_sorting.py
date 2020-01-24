@@ -16,25 +16,26 @@ def selection_sort(arr):
 
     return arr
 
+newarray = [9, 6, 1, 3, 2, 7, 4, 5, 8]
+selection_sort(newarray)
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
-	swap = True
-	while swap == True:
-		swap = False
-		for i in range(0, len(arr) - 1):
-			if arr[i] > arr[i + 1]:
-				arr[i], arr[i + 1] = arr[i + 1], arr[i]
-				swap = True
-	
+    swap = True
+    while swap == True:
+        swap = False
+        for i in range(0, len(arr) - 1):
+            if arr[i] > arr[i + 1]:
+                arr[i], arr[i + 1] = arr[i + 1], arr[i]
+                swap = True
 
-	return arr
+    return arr
 
 
 # STRETCH: implement the Count Sort function below
 def count_sort(arr, maximum=-1):
-	count = []
-	sort = []
-	for i in range(0, len(arr) - 1):
-		count[arr[i]] = count[arr[1]] + 1
-	return arr
+    count = []
+    sort = []
+    for i in range(0, len(arr) - 1):
+        count[arr[i]] = count[arr[1]] + 1
+    return arr
